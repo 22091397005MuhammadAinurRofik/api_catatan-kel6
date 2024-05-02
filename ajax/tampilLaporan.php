@@ -58,11 +58,11 @@
         </div>
     </div>
     <!-- export -->
-    <form action="export/excelPemasukkan.php?jenis=<?= $jenis ?>&awal=<?= $tanggalAwal ?>&akhir=<?= $tanggalAkhir ?>&username=<?= $username ?>" method="post">
+    <!-- <form action="export/excelPemasukkan.php?jenis=<?= $jenis ?>&awal=<?= $tanggalAwal ?>&akhir=<?= $tanggalAkhir ?>&username=<?= $username ?>" method="post">
         <button type="submit" name="excel" class="btn btn-success export float-left" style="margin-top: -20px">
             <i class="far fa-file-excel"></i> save to excel
         </button>
-    </form>
+    </form> -->
     <form action="export/pdfPemasukkan.php?jenis=<?= $jenis ?>&awal=<?= $tanggalAwal ?>&akhir=<?= $tanggalAkhir ?>&username=<?= $username ?>" method="post">
         <button type="submit" name="pdf" class="btn btn-danger export pdf" style="margin-top: -33px">
             <i class="far fa-file-pdf"></i> save to PDF
@@ -70,7 +70,7 @@
     </form>
     <!-- export -->
 
-    <div class="row">
+    <!-- <div class="row">
         <div class="col-lg-12 judul">
             <h2 class="text-center judul-chart">Diagram Pemasukkan</h2>
             <hr>
@@ -86,7 +86,7 @@
                 <canvas id="myChart2"></canvas>
             </div>
         </div>
-    </div>
+    </div> -->
     
 <!-- pengeluaran -->
 <?php elseif($jenis == 'pengeluaran' && $tanggalAwal != '' && $tanggalAkhir != '') : ?>
@@ -138,11 +138,11 @@
         </div>
     </div>
     <!-- export -->
-    <form action="export/excelPengeluaran.php?jenis=<?= $jenis ?>&awal=<?= $tanggalAwal ?>&akhir=<?= $tanggalAkhir ?>&username=<?= $username ?>" method="post">
+    <!-- <form action="export/excelPengeluaran.php?jenis=<?= $jenis ?>&awal=<?= $tanggalAwal ?>&akhir=<?= $tanggalAkhir ?>&username=<?= $username ?>" method="post">
         <button type="submit" name="excel" class="btn btn-success export float-left" style="margin-top: -20px">
             <i class="far fa-file-excel"></i> save to excel
         </button>
-    </form>
+    </form> -->
     <form action="export/pdfPengeluaran.php?jenis=<?= $jenis ?>&awal=<?= $tanggalAwal ?>&akhir=<?= $tanggalAkhir ?>&username=<?= $username ?>" method="post">
         <button type="submit" name="pdf" class="btn btn-danger export pdf" style="margin-top: -33px">
             <i class="far fa-file-pdf"></i> save to PDF
@@ -150,7 +150,7 @@
     </form>
     <!-- export -->
     
-    <div class="row">
+    <!-- <div class="row">
         <div class="col-lg-12 judul">
             <h2 class="text-center judul-chart">Diagram Pengeluaran</h2>
             <hr>
@@ -166,11 +166,11 @@
                 <canvas id="myChart4"></canvas>
             </div>
         </div>
-    </div>
+    </div> -->
     
 <?php endif; ?>
 
-<?php 
+<!-- <?php 
     require '../function/diagramPemasukkan.php'; 
     require '../function/diagramPengeluaran.php'; 
-?>
+?> -->

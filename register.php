@@ -49,7 +49,7 @@ if (isset($_POST['sign-up'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- Title -->
-    <title>Register | Dompet-Qu</title>
+    <title>Register | CatatanKu</title>
     <!-- Favicon -->
     <link rel="shortcut icon" href="img/icon.png">
     <!-- External Stylesheets -->
@@ -94,24 +94,16 @@ if (isset($_POST['sign-up'])) {
 <body>
     <!-- Main Container -->
     <div class="container">
-        <div class="row justify-content-md-center mt-12">
+        <div class="center">
             <!-- Sign-up Section -->
-            <div class="col-sm-6 p-0">
+            <div>
                 <div class="card">
                     <div class="card-header">
                         <!-- Sign-up and Login Tabs -->
                         <div class="signup">
                             <h4 class="aktif">SIGN UP</h4>
                         </div>
-                        <div>
-                            <h4> / </h4>
-                        </div>
-                        <!-- Subtitle for Sign-up Section -->
-                        <div class="sub-title">Registrasi untuk gunakan CatatanKu</div>
-                    </div>
-                    <!-- User Icon -->
-                    <div class="icon-user">
-                        <h4 class="fa fa-user"> </h4>
+                        
                     </div>
                     <!-- Sign-up Form -->
                     <div class="card-body">

@@ -1,0 +1,245 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "Pemasukkan API",
+    "description": "API for managing income data",
+    "version": "1.0.0"
+  },
+  "servers": [
+    {
+      "url": "http://localhost"
+    }
+  ],
+  "paths": {
+    "/add_income": {
+      "post": {
+        "summary": "Add new income data",
+        "requestBody": {
+          "description": "Income data",
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "tanggal": {
+                    "type": "string",
+                    "description": "Date of income (format: YYYY-MM-DD)"
+                  },
+                  "keterangan": {
+                    "type": "string",
+                    "description": "Description of income"
+                  },
+                  "sumber": {
+                    "type": "string",
+                    "description": "Source of income"
+                  },
+                  "jumlah": {
+                    "type": "number",
+                    "description": "Amount of income"
+                  },
+                  "username": {
+                    "type": "string",
+                    "description": "Username of the user"
+                  }
+                },
+                "required": [
+                  "tanggal",
+                  "keterangan",
+                  "sumber",
+                  "jumlah",
+                  "username"
+                ]
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "status": {
+                      "type": "string",
+                      "description": "Status message"
+                    },
+                    "Message": {
+                      "type": "string",
+                      "description": "Success message"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "status": {
+                      "type": "string",
+                      "description": "Status message"
+                    },
+                    "Message": {
+                      "type": "string",
+                      "description": "Error message"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/delete_income": {
+      "delete": {
+        "summary": "Delete income data",
+        "requestBody": {
+          "description": "Income data",
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "description": "ID of the income data to be deleted"
+                  }
+                },
+                "required": ["id"]
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "status": {
+                      "type": "string",
+                      "description": "Status message"
+                    },
+                    "message": {
+                      "type": "string",
+                      "description": "Success message"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "status": {
+                      "type": "string",
+                      "description": "Status message"
+                    },
+                    "message": {
+                      "type": "string",
+                      "description": "Error message"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/update_income": {
+      "put": {
+        "summary": "Update income data",
+        "requestBody": {
+          "description": "Income data",
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "tanggal": {
+                    "type": "string",
+                    "description": "Date of income (format: YYYY-MM-DD)"
+                  },
+                  "keterangan": {
+                    "type": "string",
+                    "description": "Description of income"
+                  },
+                  "sumber": {
+                    "type": "string",
+                    "description": "Source of income"
+                  },
+                  "jumlah": {
+                    "type": "number",
+                    "description": "Amount of income"
+                  },
+                  "id": {
+                    "type": "string",
+                    "description": "ID of the income data to be updated"
+                  }
+                },
+                "required": ["tanggal", "keterangan", "sumber", "jumlah", "id"]
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "status": {
+                      "type": "string",
+                      "description": "Status message"
+                    },
+                    "Message": {
+                      "type": "string",
+                      "description": "Success message"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "status": {
+                      "type": "string",
+                      "description": "Status message"
+                    },
+                    "Message": {
+                      "type": "string",
+                      "description": "Error message"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

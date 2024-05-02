@@ -1,0 +1,80 @@
+/* Container untuk menengahkan card */
+.register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: row; /* Mengubah orientasi menjadi horizontal */
+}
+
+/* Class untuk mengatur lebar card */
+.register-center {
+  width: 100%;
+  max-width: 400px; /* Sesuaikan lebar maksimum sesuai kebutuhan */
+}
+
+/* Gaya untuk card register */
+.register-card {
+  border-radius: 10px;
+  border: 0;
+  height: 100%;
+}
+
+/* Gaya untuk header card register */
+.register-card > .card-header {
+  background: transparent;
+  border-bottom: 1px solid #eee;
+}
+
+/* Gaya untuk judul tab register */
+.register-card-header div {
+  display: inline-block;
+}
+
+/* Gaya untuk tombol tab sign up pada register */
+.register-signup {
+  padding: 5px;
+  cursor: pointer;
+}
+
+/* Gaya saat hover pada tombol tab register */
+.register-signup:hover {
+  color: orange;
+}
+
+/* Gaya untuk teks yang aktif pada register */
+.register-aktif {
+  color: #333; /* Mengubah warna teks */
+  font-weight: bold;
+}
+
+/* Gaya untuk input form pada register */
+.register-form-control {
+  border-radius: 0;
+  width: 100%; /* Mengatur lebar input agar memenuhi card */
+}
+
+/* Gaya untuk ikon pada input group pada register */
+.register-input-group-text {
+  background: transparent;
+  border-radius: 0;
+}
+
+/* Gaya untuk group input pada register */
+.register-input-group {
+  margin-bottom: 15px;
+}
+
+/* Gaya untuk tombol sign up pada register */
+.register-btn-primary {
+  width: 100%; /* Mengatur lebar tombol agar memenuhi card */
+  margin-top: 10px;
+}
+
+/* Media query untuk perangkat dengan lebar layar kurang dari 758px pada register */
+@media only screen and (max-width: 758px) {
+  /* Mengatur margin top menjadi 0 untuk class mt-12 pada register */
+  .register-mt-12 {
+    margin-top: 0;
+  }
+}

@@ -1,7 +1,8 @@
 <?php 
 	session_start();
-	require "function/functions.php";
 	
+	require "function/functions.php";
+
 	// session dan cookie multilevel user
 	if(isset($_COOKIE['login'])) {
 		if ($_COOKIE['level'] == 'user') {

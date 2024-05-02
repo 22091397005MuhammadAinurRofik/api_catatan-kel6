@@ -1,5 +1,17 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.center {
+  width: 100%;
+  max-width: 400px; /* Sesuaikan lebar maksimum sesuai kebutuhan */
+}
+
 .card {
-  border-radius: 0;
+  border-radius: 10px;
   border: 0;
   height: 100%;
 }
@@ -7,6 +19,7 @@
 .card > .card-header {
   background: transparent;
   border-bottom: 1px solid #eee;
+  text-align: center;
 }
 
 .card-header div {
@@ -26,7 +39,7 @@
 }
 
 .aktif {
-  color: orange;
+  color: rgb(0, 0, 0);
   font-weight: bold;
 }
 

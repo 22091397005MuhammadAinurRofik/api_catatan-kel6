@@ -41,7 +41,7 @@ if (isset($_POST['login'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- Title -->
-    <title>Login | Dompet-Qu</title>
+    <title>Login | CatatanKu</title>
     <!-- Favicon -->
     <link rel="shortcut icon" href="img/icon.png">
     <!-- External Stylesheets -->
@@ -85,64 +85,53 @@ if (isset($_POST['login'])) {
 </head>
 
 <body>
-    <!-- Main Container -->
-    <div class="container">
-        <div class="row justify-content-md-center mt-12">
-            <!-- Login Section -->
-            <div class="col-sm-6 p-0">
-                <div class="card">
-                    <div class="card-header">
-                        <!-- Login Tab -->
-                        <div class="login">
-                            <h4 class="aktif">LOGIN</h4>
-                        </div>
-                        <div>
-                            <h4> / </h4>
-                        </div>
-                        <!-- Subtitle for Login Section -->
-                        <div class="sub-title">Login untuk gunakan CatatanKu</div>
-                    </div>
-                    <!-- User Icon -->
-                    <div class="icon-user">
-                        <h4 class="fa fa-user"></h4>
-                    </div>
-                    <!-- Login Form -->
-                    <div class="card-body">
-                        <form method="POST">
-                            <!-- Username or Email Input -->
-                            <div class="input-group mb-3">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text"><i class="fa fa-user"></i></span>
-                                </div>
-                                <input type="text" name="user-email" class="form-control"
-                                    placeholder="Username / email" autocomplete="off" required>
-                            </div>
-                            <!-- Password Input -->
-                            <div class="input-group mb-3">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text"><i class="fa fa-lock"></i></span>
-                                </div>
-                                <input type="password" name="password-login" class="form-control"
-                                    placeholder="Password" required>
-                            </div>
-                            <!-- Remember Me Checkbox -->
-                            <div class="form-group">
-                                <label class="mz-check">
-                                    <input type="checkbox" name="rememberme">
-                                    <i class="mz-blue"></i>
-                                    Remember Me
-                                </label>
-                            </div>
-                            <!-- Login Button -->
-                            <button type="submit" name="login" class="btn btn-primary"
-                                style="margin-top: -15px">Login</button>
-                        </form>
-                        <div class="input-group mt-3"><h6 >Belum punya akun?<a href="register.php">Register</a></h6></div>
-                    </div>
+   <!-- Main Container -->
+<div class="container">
+    <div class="center">
+        <!-- Login Section -->
+        <div class="card">
+            <div class="card-header">
+                <!-- Login Tab -->
+                <div class="login">
+                    <h4 class="aktif">LOGIN</h4>
                 </div>
+                <!-- Subtitle for Login Section -->
+                <!-- <div class="sub-title">Login untuk gunakan CatatanKu</div> -->
+            </div>
+            
+            <!-- Login Form -->
+            <div class="card-body">
+                <form method="POST">
+                    <!-- Username or Email Input -->
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="fa fa-user"></i></span>
+                        </div>
+                        <input type="text" name="user-email" class="form-control" placeholder="Username / email" autocomplete="off" required>
+                    </div>
+                    <!-- Password Input -->
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="fa fa-lock"></i></span>
+                        </div>
+                        <input type="password" name="password-login" class="form-control" placeholder="Password" required>
+                    </div>
+                    <!-- Remember Me Checkbox -->
+                    <div class="form-group">
+                        <label class="mz-check">
+                            <input type="checkbox" name="rememberme">
+                            <i class="mz-blue"></i>
+                            Remember Me
+                        </label>
+                    </div>
+                    <!-- Login Button -->
+                    <button type="submit" name="login" class="btn btn-primary" style="margin-top: -15px">Login</button>
+                </form>
+                <div class="input-group mt-3"><h6 >Belum punya akun?<a href="register.php">Register</a></h6></div>
             </div>
         </div>
     </div>
+</div>
     <!-- Script for Slide Login -->
     <script src="js/slidelogin.js"></script>
 </body>
